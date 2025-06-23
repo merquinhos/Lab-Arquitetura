@@ -1,0 +1,36 @@
+$date
+    Jun 11, 2025  09:36:21
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module xor_t $end
+
+$scope module inst1 $end
+$var wire      1 !    a  $end
+$var wire      1 "    b  $end
+$var reg       1 #    out $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+1!
+0"
+1#
+$end
+#10
+1"
+0#
+#20
+0!
+1#
+#30
+0"
+0#
+#30

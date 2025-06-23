@@ -1,0 +1,41 @@
+$date
+    Jun 11, 2025  09:32:00
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module ULA_t $end
+
+$scope module inst1 $end
+$var wire      4 !    A [3:0] $end
+$var wire      4 "    B [3:0] $end
+$var reg       4 #    resul [3:0] $end
+$var reg       1 $    flag $end
+$var wire      2 %    sel [1:0] $end
+$var reg       5 &    RES [4:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b111 !
+b110 "
+b1 #
+0$
+b1 %
+b1 &
+$end
+#2
+b1 "
+b1111 !
+b0 %
+b0 &
+b10000 &
+b0 #
+1$
+#4

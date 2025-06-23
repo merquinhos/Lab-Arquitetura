@@ -1,0 +1,1 @@
+s1(11Jun2025:09:36:19):  xrun -Q -unbuffered -timescale 1ns/1ns -sysv -access +rw design.sv testbench.sv 

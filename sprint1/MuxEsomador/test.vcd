@@ -1,0 +1,57 @@
+$date
+    Jun 11, 2025  09:33:10
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module muxEsomador_t $end
+
+$scope module inst1 $end
+$var wire      4 !    A [3:0] $end
+$var wire      4 "    B [3:0] $end
+$var wire      4 #    C [3:0] $end
+$var wire      1 $    S  $end
+$var reg       4 %    RES [3:0] $end
+$var wire      4 &    mux_out [3:0] $end
+
+$scope module u_mux $end
+$var wire      4 "    i0 [3:0] $end
+$var wire      4 #    i1 [3:0] $end
+$var reg       4 '    out [3:0] $end
+$var wire      1 $    sel  $end
+$upscope $end
+
+
+$scope module u_somador $end
+$var wire      4 !    a [3:0] $end
+$var wire      4 &    b [3:0] $end
+$var wire      4 (    res [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b11 !
+b101 "
+b1001 #
+1$
+b1000 %
+b101 &
+b101 '
+b1000 (
+$end
+#10
+0$
+b100 "
+b1001 '
+b1001 &
+b1100 (
+b1100 %
+#12

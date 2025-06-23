@@ -1,0 +1,32 @@
+$date
+    Jun 11, 2025  09:35:01
+$end
+$version
+    TOOL:	xmsim	23.09-s001
+$end
+$timescale
+    1 ns
+$end
+
+$scope module mux2x1_t $end
+
+$scope module inst1 $end
+$var wire      4 !    a [3:0] $end
+$var wire      4 "    b [3:0] $end
+$var reg       4 #    out [3:0] $end
+$var wire      1 $    sel  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1 !
+b10 "
+b1 #
+1$
+$end
+#1
+0$
+b10 #
+#3

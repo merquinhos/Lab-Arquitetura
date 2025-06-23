@@ -1,0 +1,25 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Jun 11, 2025 at 09:35:25 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		somador_tb
+Loading snapshot worklib.somador_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+time = 0, ia=0,ib=1,out=1
+time = 10, ia=2,ib=1,out=3
+time = 20, ia=3,ib=1,out=4
+time = 30, ia=a,ib=1,out=b
+time = 40, ia=a,ib=2,out=c
+time = 50, ia=a,ib=3,out=d
+Simulation complete via $finish(1) at time 52 NS + 0
+./testbench.sv:34     #2 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Jun 11, 2025 at 09:35:27 EDT  (total: 00:00:02)
