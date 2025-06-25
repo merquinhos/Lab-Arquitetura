@@ -1,0 +1,19 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Jun 25, 2025 at 17:25:32 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		resgistrador_t
+Loading snapshot worklib.resgistrador_t:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 95 NS + 0
+./testbench.sv:52     #25 $finish; // Termina a simulação
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Jun 25, 2025 at 17:25:34 EDT  (total: 00:00:02)

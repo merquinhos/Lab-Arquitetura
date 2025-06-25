@@ -1,0 +1,72 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Jun 25, 2025 at 17:20:39 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		contador16_t
+Loading snapshot worklib.contador16_t:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Tempo 0: Inicio da simulacao do Contador.
+Tempo 10: --- Teste de Reset Assincrono ---
+Tempo 20: --- Teste de Contagem Crescente (0-F) ---
+Tempo 20: Habilitando contador crescente. Valor inicial: 0
+Tempo 30: Contagem = 1 (Esperado: 00000000)
+Tempo 40: Contagem = 2 (Esperado: 00000001)
+Tempo 50: Contagem = 3 (Esperado: 00000002)
+Tempo 60: Contagem = 4 (Esperado: 00000003)
+Tempo 70: Contagem = 5 (Esperado: 00000004)
+Tempo 80: Contagem = 6 (Esperado: 00000005)
+Tempo 90: Contagem = 7 (Esperado: 00000006)
+Tempo 100: Contagem = 8 (Esperado: 00000007)
+Tempo 110: Contagem = 9 (Esperado: 00000008)
+Tempo 120: Contagem = a (Esperado: 00000009)
+Tempo 130: Contagem = b (Esperado: 0000000a)
+Tempo 140: Contagem = c (Esperado: 0000000b)
+Tempo 150: Contagem = d (Esperado: 0000000c)
+Tempo 160: Contagem = e (Esperado: 0000000d)
+Tempo 170: Contagem = f (Esperado: 0000000e)
+Tempo 180: Contagem = 0 (Esperado: 0000000f)
+Tempo 190: Contagem = 1 (Esperado: 00000000)
+Tempo 200: Contagem = 2 (Esperado: 00000001)
+Tempo 210: Contagem = 3 (Esperado: 00000002)
+Tempo 220: Contagem = 4 (Esperado: 00000003)
+Tempo 220: Fim do teste de contagem crescente.
+Tempo 220: --- Teste de Desabilitar Contador (Enable = 0) ---
+Tempo 220: Desabilitando contador. Contagem deve manter 4.
+Tempo 250: Fim do teste de desabilitar contador.
+Tempo 250: --- Teste de Contagem Decrescente (F-0) ---
+Tempo 250: Aplicando Reset para 0 antes da contagem decrescente.
+Tempo 260: Habilitando contador decrescente. Valor inicial: 0
+Tempo 270: Contagem = f
+Tempo 280: Contagem = e
+Tempo 290: Contagem = d
+Tempo 300: Contagem = c
+Tempo 310: Contagem = b
+Tempo 320: Contagem = a
+Tempo 330: Contagem = 9
+Tempo 340: Contagem = 8
+Tempo 350: Contagem = 7
+Tempo 360: Contagem = 6
+Tempo 370: Contagem = 5
+Tempo 380: Contagem = 4
+Tempo 390: Contagem = 3
+Tempo 400: Contagem = 2
+Tempo 410: Contagem = 1
+Tempo 420: Contagem = 0
+Tempo 430: Contagem = f
+Tempo 440: Contagem = e
+Tempo 450: Contagem = d
+Tempo 460: Contagem = c
+Tempo 460: Fim do teste de contagem decrescente.
+Tempo 460: Fim da simulacao do Contador.
+Simulation complete via $finish(1) at time 480 NS + 0
+./testbench.sv:81         $finish; // Termina a simulação
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Jun 25, 2025 at 17:20:41 EDT  (total: 00:00:02)

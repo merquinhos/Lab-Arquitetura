@@ -1,0 +1,24 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-MESSAGES
+-UNBUFFERED
++EMGRLOG
+xrun.log
+-XLSTIME
+1750886732
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx86.23.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx86.23.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx86.23.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun	23.09-s001"
+-XLNAME
+./xcelium.d/run.lnx86.23.09.d/67720ef6c289_efe0164f-32a5-4620-8a0a-03c69880460a
