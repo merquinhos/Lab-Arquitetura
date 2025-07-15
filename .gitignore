@@ -1,0 +1,61 @@
+# Quartus II / Quartus Prime Files
+# ---------------------------------
+
+# Build and Synthesis related directories
+output_files/
+db/
+incremental_db/
+quartus_auto_save/
+.qws/ # Quartus workspace (user-specific settings)
+
+# Simulation related directories and files
+simulation/
+.qsys_edit/
+dsp_builder/
+
+# Log and Report Files
+*.rpt
+*.txt
+*.log
+*.sum
+*.qpf.bak # Backup of project file
+
+# Temporary/Cache files
+*.bak
+*.tmp
+*.tok
+*.cmp
+*.pin
+*.sof # SRAM Object File (generated during compilation)
+*.pof # Programmer Object File (generated during compilation)
+*.jam # JAM Standard Test and Programming Language File
+*.jbc # Jam Byte Code File
+*.svf # Serial Vector Format File
+*.tdf # Text Design File (intermediate representation)
+*.cdf # Chain Description File
+*.sdc # Synopsys Design Constraints (unless it's a critical, manually crafted one)
+*.sft # SignalTap File (if generated automatically)
+*.vcd # Value Change Dump (simulation output)
+*.vwf # Vector Waveform File (simulation setup/output)
+*.qch # Quartus Help Cache
+*.qac # Quartus Analysis Cache
+*.qip # Quartus IP File (often generated)
+*.ip # IP core definition (often generated)
+*.sta # Static Timing Analysis report
+
+# Qsys related files (if not intended for sharing as source)
+*.qsys # Qsys system file - **Consider including if it's your source!**
+# If .qsys is your source, do NOT ignore it. 
+# If it's something generated or purely local, you might.
+# For most projects, you'd version the .qsys file.
+# The generated files *from* .qsys (like .v, .vhd, .qip, etc.) are usually ignored.
+
+# Operating System Files
+.DS_Store # macOS
+Thumbs.db # Windows
+desktop.ini # Windows
+
+# Editor specific files (if applicable)
+*.swp # Vim swap files
+*~ # Emacs backup files
+# .vscode/ # VS Code settings (if you don't want to share workspace settings)
